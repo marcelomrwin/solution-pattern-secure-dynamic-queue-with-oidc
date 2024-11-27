@@ -1,5 +1,5 @@
-name: solution-pattern-template
-title: Template Tutorial
+name: solution-pattern-secure-dynamic-queue-with-oidc
+title: Applying security to dynamic queues with OIDC
 version: master
 nav:
   - modules/ROOT/nav.adoc
