@@ -1,6 +1,22 @@
 == The story behind this solution pattern
 
-A description of the story that was used to build the demo and architectures of this SP.
+The aviation industry is known for its high standards of safety and efficiency, enforced by strict controls and regulations to minimize errors. To enhance interoperability among different air traffic operators, a consortium of companies in the sector established standards, data models, and operational workflows that must be implemented by all members.
+
+Globex Air Nav, one of the companies participating in the consortium, faces the challenge of meeting these specifications in a highly regulated environment. Globex operates in a business context that requires real-time message management between critical systems, where reliability and security are essential. The challenges imposed by the consortium include:
+
+.	*External Message Consumption*
+**	Ensuring the ingestion of messages from external providers and storing them in its internal environment for further processing.
+.	*Standardization and Cataloging*
+**	Formatting and organizing these messages according to the consortium’s data model, classifying them into topics of interest that can be queried by different actors.
+.	*Message Distribution*
+**	Providing consistent, exclusive, and secure distribution to previously unknown clients, in alignment with the consortium’s rules.
+.	*API and Queue Publication*
+**	Offering a REST API to allow subscriptions to topics of interest.
+**	Publishing messages through AMQP queues, ensuring exclusive access per consumer.
+
+Additionally, Globex Air Nav needs to integrate security across all solution components. However, the consortium does not provide a detailed specification on how to achieve this, creating an additional challenge for the company.
+
+In addition to the software and middleware challenges, Globex Air Nav still needs to deal with the infrastructure, that is, it needs to provision an environment that accommodates these different parts of the solution in an agile, reliable and scalable way.
 
 == The Solution
 
