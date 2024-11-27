@@ -257,7 +257,63 @@ Dynamic queues that ensure access is restricted to specific consumers provide gr
 <h2 id="_the_story_behind_this_solution_pattern"><a class="anchor" href="#_the_story_behind_this_solution_pattern"></a><a class="link" href="#_the_story_behind_this_solution_pattern">2. The story behind this solution pattern</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>A description of the story that was used to build the demo and architectures of this SP.</p>
+<p>The aviation industry is known for its high standards of safety and efficiency, enforced by strict controls and regulations to minimize errors. To enhance interoperability among different air traffic operators, a consortium of companies in the sector established standards, data models, and operational workflows that must be implemented by all members.</p>
+</div>
+<div class="paragraph">
+<p>Globex Air Nav, one of the companies participating in the consortium, faces the challenge of meeting these specifications in a highly regulated environment. Globex operates in a business context that requires real-time message management between critical systems, where reliability and security are essential. The challenges imposed by the consortium include:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>External Message Consumption</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ensuring the ingestion of messages from external providers and storing them in its internal environment for further processing.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Standardization and Cataloging</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Formatting and organizing these messages according to the consortium’s data model, classifying them into topics of interest that can be queried by different actors.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Message Distribution</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Providing consistent, exclusive, and secure distribution to previously unknown clients, in alignment with the consortium’s rules.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>API and Queue Publication</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Offering a REST API to allow subscriptions to topics of interest.</p>
+</li>
+<li>
+<p>Publishing messages through AMQP queues, ensuring exclusive access per consumer.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Additionally, Globex Air Nav needs to integrate security across all solution components. However, the consortium does not provide a detailed specification on how to achieve this, creating an additional challenge for the company.</p>
+</div>
+<div class="paragraph">
+<p>In addition to the software and middleware challenges, Globex Air Nav still needs to deal with the infrastructure, that is, it needs to provision an environment that accommodates these different parts of the solution in an agile, reliable and scalable way.</p>
 </div>
 </div>
 </div>
