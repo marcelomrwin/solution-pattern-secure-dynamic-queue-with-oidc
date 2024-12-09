@@ -1,10 +1,18 @@
-= Solution Patterns: Template Name
+= Solution Patterns: Applying security to dynamic queues with OIDC
 :sectnums:
 :sectlinks:
 :doctype: book
 
+== Developer Resources
 
-= Developer Resources
+Here you find a list of developer resources relevant to this Solution Pattern:
 
-* Add link to the git repo of the code
-* Add links to whitepapers, ebooks, learning paths, product pages
+* https://developers.redhat.com/about[Register^] for Red Hat developers subscription to get access to Red Hat products for personal use at no cost
+* https://developers.redhat.com/developer-sandbox[Get a free Openshift^] instance to get started with your projects
+* https://access.redhat.com/products/red-hat-build-of-keycloak[Red Hat build of Keycloak^]
+* https://developers.redhat.com/products/amq/overview[Red Hat AMQ Broker^]
+* https://developers.redhat.com/products/redhat-build-of-apache-camel/overview[Red Hat build of Apache Camel^]
+* https://developers.redhat.com/products/nodejs/overview[Red Hat build of Node.js^]
+* https://developers.redhat.com/products/openjdk/overview[Red Hat build of OpenJDK^]
+* https://developers.redhat.com/products/openshift-local/overview[Red Hat OpenShift Local^]
+* https://developers.redhat.com/products/quarkus[Red Hat build of Quarkus: Kubernetes-native Java^]
